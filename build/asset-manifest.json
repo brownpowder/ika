@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ika/static/css/main.0b8df052.css",
+    "main.js": "/ika/static/js/main.2044d49c.js",
+    "static/js/787.4b43c507.chunk.js": "/ika/static/js/787.4b43c507.chunk.js",
+    "static/media/7.png": "/ika/static/media/7.0231db98d68150c31d38.png",
+    "static/media/5.png": "/ika/static/media/5.6cac6684c3370691b54b.png",
+    "static/media/2.png": "/ika/static/media/2.070243e9e8a40398e3b6.png",
+    "static/media/6.png": "/ika/static/media/6.97f0eac9af7b76c9bb39.png",
+    "static/media/1.png": "/ika/static/media/1.6c09a729617fe0007afc.png",
+    "static/media/3.png": "/ika/static/media/3.f5beb1f52b682fd776e4.png",
+    "static/media/9.png": "/ika/static/media/9.04cc348d6a69376ca671.png",
+    "static/media/4.png": "/ika/static/media/4.25fadf5adf58850606e8.png",
+    "static/media/10.png": "/ika/static/media/10.12c50620435a35a699f3.png",
+    "static/media/8.png": "/ika/static/media/8.c86082887eef6324091d.png",
+    "index.html": "/ika/index.html",
+    "main.0b8df052.css.map": "/ika/static/css/main.0b8df052.css.map",
+    "main.2044d49c.js.map": "/ika/static/js/main.2044d49c.js.map",
+    "787.4b43c507.chunk.js.map": "/ika/static/js/787.4b43c507.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b8df052.css",
+    "static/js/main.2044d49c.js"
+  ]
+}
