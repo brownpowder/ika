@@ -1,0 +1,136 @@
+$width: 1920px;
+$min-width2: 980px;
+$max-width2: 979px;
+$transition: 0.3s;
+$border-radius: 15px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
+    'Hiragino Sans', Meiryo, sans-serif;
+}
+
+.section {
+  padding: 120px 20px;
+  width: 100%;
+  &_titleBox {
+    text-align: center;
+    background: #111;
+    margin: auto;
+    max-width: 450px;
+    padding: 5px;
+    border-radius: $border-radius;
+    h1,
+    h2 {
+      color: #fff;
+      display: inline;
+      font-size: 120%;
+    }
+    h1 {
+      margin-right: 10px;
+    }
+  }
+
+  &_mainImg {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 560px;
+  }
+
+  &_line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    width: 180px;
+    margin: 20px auto 0 auto;
+    border: 1px solid #000;
+    background: #fff;
+    padding: 20px;
+    border-radius: 50%;
+
+    &_icon {
+      width: 20px;
+    }
+    &_text {
+      margin-right: 10px;
+    }
+  }
+}
+
+.menuSection {
+  position: fixed;
+  background: #bbb;
+  border-radius: $border-radius;
+  z-index: 100;
+  &_icon {
+    color: #000;
+  }
+  @media (max-width: $max-width2) {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 60px);
+    bottom: 20px;
+    left: 30px;
+    padding: 10px 20px;
+    &_icon {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  @media (min-width: $min-width2) {
+    top: 20px;
+    left: 20px;
+    padding: 7px 15px;
+    &_home {
+      margin-bottom: 40px;
+    }
+    &_icon {
+      display: block;
+      text-align: center;
+      margin: 20px auto;
+    }
+  }
+}
+
+.footer {
+  position: relative;
+  width: calc(100% - 20px);
+  max-width: 1200px;
+  background: #111;
+  margin: auto;
+  border-radius: 40px 40px 0 0;
+  @media (max-width: $max-width2) {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+  @media (min-width: $min-width2) {
+    padding: 60px 30px;
+  }
+  &_title {
+    text-align: center;
+    color: #fff;
+    font-size: 100%;
+  }
+  &_img {
+    position: absolute;
+    width: 100px;
+    right: -5px;
+    top: 0;
+  }
+}
+
+#tsparticles {
+  position: fixed;
+  z-index: -1;
+  opacity: 0.5;
+}
