@@ -48,10 +48,10 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #000;
+    color: #111;
     width: 180px;
     margin: 20px auto 0 auto;
-    border: 1px solid #000;
+    border: 1px solid #111;
     background: #fff;
     padding: 20px;
     border-radius: 50%;
@@ -71,7 +71,7 @@ body {
   border-radius: $border-radius;
   z-index: 100;
   &_icon {
-    color: #000;
+    color: #111;
   }
   @media (max-width: $max-width2) {
     display: flex;
