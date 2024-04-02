@@ -85,6 +85,7 @@ const IkaSection = () => {
               <p className="section_line_text">Line Stamp</p>
               <img src={line} alt="" className="section_line_icon" />
             </a>
+            <div>test</div>
           </section>
         );
       })}
