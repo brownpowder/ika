@@ -8,7 +8,6 @@ import ika7 from '../../assets/images/7.png';
 import ika8 from '../../assets/images/8.png';
 import ika9 from '../../assets/images/9.png';
 import line from '../../assets/images/line.png';
-
 import SectionTitle from '../modules/SectionTitle';
 
 const lineUrl = {
