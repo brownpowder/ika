@@ -1,6 +1,7 @@
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import HomeIcon from '@mui/icons-material/Home';
+import BlueSkyIcon from '../../assets/images/Bluesky_Icon.svg';
 
 const MenuSection = () => {
   const menu = () => {
@@ -23,6 +24,10 @@ const MenuSection = () => {
         url: 'https://www.instagram.com/ika_1903/',
         icon: <InstagramIcon />,
       },
+      // {
+      //   url: '',
+      //   icon: <img src={BlueSkyIcon} alt="" id="blueskyIcon" />,
+      // },
     ];
     return menuData;
   };
