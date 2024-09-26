@@ -1,7 +1,9 @@
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import XIcon from '@mui/icons-material/X';
 import HomeIcon from '@mui/icons-material/Home';
 import BlueSkyIcon from '../../assets/images/Bluesky_Icon.svg';
+import TikTokIcon from '../accessories/TikTokIcon';
 
 const MenuSection = () => {
   const menu = () => {
@@ -18,11 +20,15 @@ const MenuSection = () => {
     const menuData = [
       {
         url: 'https://twitter.com/ikahaikaga2',
-        icon: <TwitterIcon />,
+        icon: <XIcon />,
       },
       {
         url: 'https://www.instagram.com/ika_1903/',
         icon: <InstagramIcon />,
+      },
+      {
+        url: 'https://www.tiktok.com/@ika.ika557?_t=8pUVwmlJzVw&_r=1',
+        icon: <TikTokIcon />,
       },
       // {
       //   url: '',

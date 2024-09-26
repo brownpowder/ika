@@ -3,10 +3,10 @@ import { IkaSection, MenuSection, Footer, ParticleSection } from './components';
 const App = () => {
   return (
     <>
-      <IkaSection />
+      {/* <IkaSection /> */}
       <MenuSection />
       <ParticleSection />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
