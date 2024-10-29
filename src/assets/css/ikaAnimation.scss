@@ -1,0 +1,155 @@
+$animationSec: #{random(15) + 10}s;
+
+@function transformAnimation($min, $max, $unit: px) {
+  $range: abs($max - $min);
+  $random-value: ($min + (random($range * 1000) / 1000));
+  @return #{$random-value}#{$unit};
+}
+
+// setting 1
+$horizontal-start: transformAnimation(-70, 0, px);
+$horizontal-end: transformAnimation(0, 70, px);
+
+$vertical-start: transformAnimation(-90, 0, px);
+$vertical-end: transformAnimation(0, 90, px);
+
+$rotate-start: transformAnimation(0, -40, deg);
+$rotate-end: transformAnimation(40, 0, deg);
+
+// Common
+.ika {
+  position: fixed;
+  z-index: 1;
+}
+
+// Animation1
+@keyframes horizontalAnimation1 {
+  0% {
+    transform: translateX(#{$horizontal-start});
+  }
+  100% {
+    transform: translateX(#{$horizontal-end});
+  }
+}
+
+@keyframes verticalAnimation1 {
+  0% {
+    transform: translateY(#{$vertical-start});
+  }
+  100% {
+    transform: translateY(#{$vertical-end});
+  }
+}
+
+@keyframes rotateAnimation1 {
+  0% {
+    transform: rotate(#{$rotate-start});
+  }
+  100% {
+    transform: rotate(#{$rotate-end});
+  }
+}
+
+// Animation2
+
+@keyframes horizontalAnimation2 {
+  0% {
+    transform: translateX(#{$horizontal-end});
+  }
+  100% {
+    transform: translateX(#{$horizontal-start});
+  }
+}
+
+@keyframes verticalAnimation2 {
+  0% {
+    transform: translateY(#{$vertical-end});
+  }
+  100% {
+    transform: translateY(#{$vertical-start});
+  }
+}
+@keyframes rotateAnimation2 {
+  0% {
+    transform: rotate(#{$rotate-end});
+  }
+  100% {
+    transform: rotate(#{$rotate-start});
+  }
+}
+
+// Animationクラス
+.ika1 {
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+}
+
+.horizonta1 {
+  animation: horizontalAnimation1 #{$animationSec} ease-in-out infinite alternate;
+}
+
+.vertical1 {
+  animation: verticalAnimation1 #{$animationSec} ease-in-out infinite alternate;
+}
+
+.rotate1 {
+  animation: rotateAnimation1 #{$animationSec} ease-in-out infinite alternate;
+}
+
+// Animationクラス
+.ika2 {
+  bottom: 160px;
+  left: 50px;
+  width: 120px;
+}
+
+.horizonta2 {
+  animation: horizontalAnimation2 #{$animationSec} ease-in-out infinite alternate;
+}
+
+.vertical2 {
+  animation: verticalAnimation2 #{$animationSec} ease-in-out infinite alternate;
+}
+
+.rotate2 {
+  animation: rotateAnimation2 #{$animationSec} ease-in-out infinite alternate;
+}
+
+// Animationクラス
+.ika3 {
+  bottom: 260px;
+  left: 150px;
+  width: 120px;
+}
+
+.horizonta3 {
+  animation: horizontalAnimation2 #{$animationSec} ease-in-out infinite alternate;
+}
+
+.vertical3 {
+  animation: verticalAnimation1 #{$animationSec} ease-in-out infinite alternate;
+}
+
+.rotate3 {
+  animation: rotateAnimation1 #{$animationSec} ease-in-out infinite alternate;
+}
+
+// Animationクラス
+.ika4 {
+  top: 160px;
+  right: 550px;
+  width: 120px;
+}
+
+.horizonta4 {
+  animation: horizontalAnimation2 #{$animationSec} ease-in-out infinite alternate;
+}
+
+.vertical4 {
+  animation: verticalAnimation1 #{$animationSec} ease-in-out infinite alternate;
+}
+
+.rotate4 {
+  animation: rotateAnimation2 #{$animationSec} ease-in-out infinite alternate;
+}

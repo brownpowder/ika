@@ -24,7 +24,7 @@ const ParticleSection = () => {
       options={{
         background: {
           color: {
-            value: '#ffffff',
+            value: 'transparent',
           },
         },
         fpsLimit: 120,
@@ -35,7 +35,7 @@ const ParticleSection = () => {
               mode: 'push',
             },
             onHover: {
-              enable: true,
+              enable: false,
               mode: 'repulse',
             },
             resize: true,
@@ -52,23 +52,23 @@ const ParticleSection = () => {
         },
         particles: {
           color: {
-            value: '#bbbbbb',
+            value: '#666666',
           },
           Bubbles: {
-            color: '#bbbbbb',
+            color: '#000000',
             distance: 10,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.1,
             width: 1,
           },
           collisions: {
             enable: true,
           },
           move: {
-            direction: 'none',
+            direction: 'top',
             enable: true,
             outModes: {
-              default: 'bounce',
+              default: 'destroy',
             },
             random: true,
             speed: 1,
@@ -82,13 +82,13 @@ const ParticleSection = () => {
             value: 80,
           },
           opacity: {
-            value: 0.5,
+            value: 0.2,
           },
           shape: {
             type: 'circle',
           },
           size: {
-            value: { min: 5, max: 40 },
+            value: { min: 2, max: 30 },
           },
         },
         detectRetina: true,

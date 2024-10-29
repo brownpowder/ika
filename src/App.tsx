@@ -1,12 +1,13 @@
-import { IkaSection, MenuSection, Footer, ParticleSection } from './components';
+import { IkaSection, Header, Footer, BackgroundSection } from './components';
+import IkaData from './assets/data/IkaData';
 
 const App = () => {
   return (
     <>
-      {/* <IkaSection /> */}
-      <MenuSection />
-      <ParticleSection />
-      {/* <Footer /> */}
+      <Header />
+      <IkaSection ikaData={IkaData} />
+      <BackgroundSection />
+      <Footer />
     </>
   );
 };
